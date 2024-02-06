@@ -1,0 +1,86 @@
+{
+	"layer": "top",
+	"height": 30,
+	"spacing": 4,
+	"modules-left": [
+		"hyprland/workspaces",
+		"wlr/taskbar"
+	],
+	"modules-center": [
+		"hyprland/window"
+	],
+	"modules-right": [
+		"tray",
+		"gamemode",
+		"wireplumber",
+		
+		"cpu",
+		"memory",
+		"clock"
+	],
+	"tray": {
+		"icon-size": 21,
+		"spacing": 10
+	},
+	"clock": {
+		"format": "{:%I:%M}",
+		"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+		"format-alt": "{:%d-%m-%Y}"
+	},
+	"cpu": {
+		"interval": 1,
+		"format": "",
+    "format-alt": "{}% ",
+		"max-length": 10
+	},
+	"memory": {
+		"format": "",
+    "format-alt": "{}% "
+	},
+  "network": {
+    "format-wifi": "{essid} ({signalStrength}%) ",
+    "format-ethernet": "",
+    "tooltip-format": "{ifname} via {gwaddr} ",
+    "format-linked": "{ifname} (No IP) ",
+    "format-disconnected": "Disconnected ⚠",
+    "format-alt": "{bandwidthTotalBytes} "
+  },
+	"wireplumber": {
+    "format-alt": "{volume}% {icon}",
+		"format": "{icon}",
+		"format-muted": "",
+		"format-icons": [
+			"",
+			"",
+			""
+		]
+	},
+	"hyprland/submap": {
+		"format": "✌️ {}",
+		"max-length": 8,
+		"tooltip": false
+	},
+	"hyprland/window": {
+		"separate-outputs": true
+	},
+	"gamemode": {
+		"format": "{glyph}",
+		"format-alt": "{glyph} {count}",
+		"glyph": "",
+		"hide-not-running": true,
+		"use-icon": true,
+		"icon-name": "input-gaming-symbolic",
+		"icon-spacing": 4,
+		"icon-size": 20,
+		"tooltip": true,
+		"tooltip-format": "Games running: {count}"
+	},
+	"wlr/taskbar": {
+    "format": "{icon}",
+    "icon-size": 18,
+    "icon-theme": "breeze",
+    "tooltip-format": "{title}",
+    "on-click": "activate",
+    "sort-by-app-id": true
+	}
+}
