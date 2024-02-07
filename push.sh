@@ -1,7 +1,11 @@
 #!/bin/bash
 
-cp -u -r ./xdg-desktop-portal ../xdg-desktop-portal 
-cp -u -r ./wofi ../wofi
-cp -u -r ./hypr ../hypr
-cp -u -r ./dunst ../dunst
-cp -u -r ./waybar ../waybar
+_DOT=~/.config/DotFiles
+_PATH=~/.config
+
+
+cp -rfv $_DOT/xdg-desktop-portal $_PATH
+cp -rfv $_DOT/wofi $_PATH
+cp -rfv $_DOT/hypr $_PATH
+cp -rfv $_DOT/dunst $_PATH
+cp -rfv $_DOT/waybar $_PATH
